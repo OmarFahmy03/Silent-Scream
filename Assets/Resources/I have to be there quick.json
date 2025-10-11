@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "key": "dialogue1",
+            "value": "(I have to get there… before it’s too late.)",
+            "duration": 3.0
+        },
+        {
+            "key": "dialogue2",
+            "value": "(Everything feels so heavy… I don’t know how much more I can take.)",
+            "duration": 3.0
+        },
+        {
+            "key": "dialogue3",
+            "value": "(I need my meds… before my thoughts spiral again.)",
+            "duration": 3.0
+        }
+    ]
+}

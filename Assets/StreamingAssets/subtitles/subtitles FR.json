@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "key": "dialogue1",
+            "value": "personne : regarde où tu vas, mon ami."
+        },
+        {
+            "key": "dialogue2",
+            "value": "personne : d'accord, Soldat, utilise la touche 'E' pour ramasser des armes."
+        },
+        {
+            "key": "dialogue3",
+            "value": "personne : clairement, tu ne sais pas où tu es."
+        },
+        {
+            "key": "door closing",
+            "value": "* bruit de porte qui se ferme *"
+        },
+        {
+            "key": "gun shot",
+            "value": "* bruit de coup de feu *"
+        }
+    ]
+}

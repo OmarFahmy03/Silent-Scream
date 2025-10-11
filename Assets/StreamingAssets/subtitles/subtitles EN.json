@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "key": "dialogue1",
+            "value": "person : watch where you're going my friend."
+        },
+        {
+            "key": "dialogue2",
+            "value": "person : alright Soldier, use the 'E' KEY to pick up weapons."
+        },
+        {
+            "key": "dialogue3",
+            "value": "person : clearly you do not know where you are."
+        },
+        {
+            "key": "door closing",
+            "value": "* door closing sound *"
+        },
+        {
+            "key": "gun shot",
+            "value": "* gun shot sound *"
+        }
+    ]
+}

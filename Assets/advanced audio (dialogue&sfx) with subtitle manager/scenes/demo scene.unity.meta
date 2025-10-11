@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 99c9720ab356a0642a771bea13969a05
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 312436
+  packageName: Advanced audio (dialogue/SFX) & subtitle system
+  packageVersion: 1.0.0
+  assetPath: Assets/advanced audio (dialogue&sfx) with subtitle manager/scenes/demo
+    scene.unity
+  uploadId: 737829

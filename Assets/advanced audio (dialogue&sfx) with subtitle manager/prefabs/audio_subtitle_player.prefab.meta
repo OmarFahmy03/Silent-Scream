@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5fe8f3c52bcaae546b5ad00c5b9b3503
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 312436
+  packageName: Advanced audio (dialogue/SFX) & subtitle system
+  packageVersion: 1.0.0
+  assetPath: Assets/advanced audio (dialogue&sfx) with subtitle manager/prefabs/audio_subtitle_player.prefab
+  uploadId: 737829

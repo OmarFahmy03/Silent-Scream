@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 424cce27234786f4bbd8ed096690664c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 312436
+  packageName: Advanced audio (dialogue/SFX) & subtitle system
+  packageVersion: 1.0.0
+  assetPath: Assets/advanced audio (dialogue&sfx) with subtitle manager/scripts/audio_subtitle_manager.cs
+  uploadId: 737829

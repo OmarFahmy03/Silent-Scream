@@ -1,0 +1,39 @@
+{
+    "items": [
+        {
+            "key": "dialogue1",
+            "value": "You: Hey Mike... I’m on my way home. Shouldn’t be long now.",
+            "duration": 3.0
+        },
+        {
+            "key": "dialogue2",
+            "value": "Mike: Doesn’t really matter, Dad.",
+            "duration": 4.5
+        },
+        {
+            "key": "dialogue3",
+            "value": "You: What do you mean, buddy? You sound upset.",
+            "duration": 3.5
+        },
+        {
+            "key": "dialogue4",
+            "value": "Mike: You were never really here, Dad... Today was my birthday. You didn’t even remember.",
+            "duration": 5.0
+        },
+        {
+            "key": "dialogue4_1",
+            "value": "Mike: Mom would’ve remembered... she always did.",
+            "duration": 3.0
+        },
+        {
+            "key": "dialogue5",
+            "value": "You: Oh God... Mike, I—I’m so sorry. I lost track of time. I didn’t mean to forget.",
+            "duration": 4.0
+        },
+        {
+            "key": "dialogue5_1",
+            "value": "You: Just hang on, okay? I’m coming home right now. We’ll celebrate, I promise.",
+            "duration": 3.0
+        }
+    ]
+}

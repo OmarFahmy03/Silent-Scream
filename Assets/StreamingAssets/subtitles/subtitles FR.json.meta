@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f5f68fad63f6f6b42aa13659ff753be5
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 312436
+  packageName: Advanced audio (dialogue/SFX) & subtitle system
+  packageVersion: 1.0.0
+  assetPath: Assets/StreamingAssets/subtitles/subtitles FR.json
+  uploadId: 737829

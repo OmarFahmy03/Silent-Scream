@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e28be5a7075d11d41a61622f94137eaa
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 312436
+  packageName: Advanced audio (dialogue/SFX) & subtitle system
+  packageVersion: 1.0.0
+  assetPath: Assets/StreamingAssets/audios/gun shot.wav
+  uploadId: 737829

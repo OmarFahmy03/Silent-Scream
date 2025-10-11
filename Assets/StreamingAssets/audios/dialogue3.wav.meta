@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0211710c59855b440a2a26592848751e
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 312436
+  packageName: Advanced audio (dialogue/SFX) & subtitle system
+  packageVersion: 1.0.0
+  assetPath: Assets/StreamingAssets/audios/dialogue3.wav
+  uploadId: 737829
