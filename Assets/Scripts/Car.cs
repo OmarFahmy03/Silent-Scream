@@ -35,7 +35,7 @@ public class Car : MonoBehaviour
     private float currentVisualSteerAngle = 0f;
 
     [Header("Crash Detection")]
-    [SerializeField] private float raycastHeight = 1.5f; // start height above car
+    [SerializeField] private float raycastHeight = 3f; // start height above car
     [SerializeField] private float rayLength = 2f;       // distance to check upward
     [SerializeField] private LayerMask crashLayer;       // layer to detect crash with
 
@@ -49,7 +49,10 @@ public class Car : MonoBehaviour
 
     public CanvasGroup crashCanvasGroup; // Assign in inspector
 
+    public AudioClip crashSound; // Assign in inspector
+
     private bool hasCrashed = false;
+    public AudioClip EngineSound; // Assign in inspector
 
     private IEnumerator AnimateCrashAndLoadScene()
     {
@@ -65,7 +68,7 @@ public class Car : MonoBehaviour
             }
             crashCanvasGroup.alpha = 1f;
         }
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(5f);
         UnityEngine.SceneManagement.SceneManager.LoadScene("Hospital"); // Change "CrashScene" to your actual scene name
     }
 
@@ -88,6 +91,23 @@ public class Car : MonoBehaviour
         UpdateDashboard();
         UpdateSteeringWheel();
         DetectCrashAbove();
+
+        if(!hasCrashed && EngineSound != null)
+        {
+            if (!GetComponent<AudioSource>())
+            {
+                gameObject.AddComponent<AudioSource>();
+            }
+            AudioSource audioSource = GetComponent<AudioSource>();
+            if (!audioSource.isPlaying)
+            {
+                audioSource.volume = 0.1f;
+                audioSource.pitch = currentRPM / maxRPM + 0.5f; // Pitch varies with RPM
+                audioSource.clip = EngineSound;
+                audioSource.loop = true;
+                audioSource.Play();
+            }
+        }
     }
 
     private void GetInput()
@@ -182,6 +202,15 @@ public class Car : MonoBehaviour
             if (!hasCrashed)
             {
                 hasCrashed = true;
+                if (crashSound != null)
+                {
+                    AudioSource audioSource = GetComponent<AudioSource>();
+                    audioSource.volume = 1f;
+                    audioSource.pitch = 1f;
+                    audioSource.loop = false;
+                    audioSource.clip = crashSound;
+                    audioSource.Play();
+                }
                 StartCoroutine(AnimateCrashAndLoadScene());
             }
         }

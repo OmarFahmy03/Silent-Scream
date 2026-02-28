@@ -188,6 +188,12 @@ namespace audio_subtitle_system
                 {
                     phone.StopPhoneSound();
                 }
+                yield return new WaitForSeconds(3f);
+                ChromaticAberrationController controlPost = FindObjectOfType<ChromaticAberrationController>();
+                if (controlPost != null)
+                {
+                    StartCoroutine(controlPost.SetChromaticAberration());
+                }
             }
         }
 

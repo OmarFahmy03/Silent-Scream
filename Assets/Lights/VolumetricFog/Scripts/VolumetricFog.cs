@@ -505,18 +505,45 @@ public class VolumetricFog : MonoBehaviour
 
 	void Scatter()
 	{
-		// Inject lighting and density
-		int kernel = 0;
+		if (m_InjectLightingAndDensity == null)
+		{
+			Debug.LogError("m_InjectLightingAndDensity is not assigned!");
+			return;
+		}
+		if (m_Scatter == null)
+		{
+			Debug.LogError("m_Scatter is not assigned!");
+			return;
+		}
 
-		SetUpForScatter(kernel);
+		int injectKernel = m_InjectLightingAndDensity.FindKernel("CSMain");
+		if (injectKernel < 0)
+		{
+			Debug.LogError("Kernel 'CSMain' not found in InjectLightingAndDensity.compute");
+			return;
+		}
 
-		m_InjectLightingAndDensity.Dispatch(kernel, m_VolumeResolution.x/m_InjectNumThreads.x, m_VolumeResolution.y/m_InjectNumThreads.y, m_VolumeResolution.z/m_InjectNumThreads.z);
+		int scatterKernel = m_Scatter.FindKernel("CSMain");
+		if (scatterKernel < 0)
+		{
+			Debug.LogError("Kernel 'CSMain' not found in Scatter.compute");
+			return;
+		}
 
-		// Solve scattering
-		m_Scatter.SetTexture(0, "_VolumeInject", m_VolumeInject);
-		m_Scatter.SetTexture(0, "_VolumeScatter", m_VolumeScatter);
-		m_Scatter.Dispatch(0, m_VolumeResolution.x/m_ScatterNumThreads.x, m_VolumeResolution.y/m_ScatterNumThreads.y, 1);
+		SetUpForScatter(injectKernel);
+		m_InjectLightingAndDensity.Dispatch(injectKernel,
+			m_VolumeResolution.x / m_InjectNumThreads.x,
+			m_VolumeResolution.y / m_InjectNumThreads.y,
+			m_VolumeResolution.z / m_InjectNumThreads.z);
+
+		m_Scatter.SetTexture(scatterKernel, "_VolumeInject", m_VolumeInject);
+		m_Scatter.SetTexture(scatterKernel, "_VolumeScatter", m_VolumeScatter);
+		m_Scatter.Dispatch(scatterKernel,
+			m_VolumeResolution.x / m_ScatterNumThreads.x,
+			m_VolumeResolution.y / m_ScatterNumThreads.y,
+			1);
 	}
+
 
 	void DebugDisplay(RenderTexture src, RenderTexture dest)
 	{

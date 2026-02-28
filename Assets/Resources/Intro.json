@@ -2,37 +2,52 @@
     "items": [
         {
             "key": "dialogue1",
-            "value": "You: Hey Mike... I’m on my way home. Shouldn’t be long now.",
+            "value": "You: Hey Mom... you okay?",
             "duration": 3.0
         },
         {
             "key": "dialogue2",
-            "value": "Mike: Doesn’t really matter, Dad.",
+            "value": "Mom: I’m fine. Just wanted to know how the interview went this time.",
             "duration": 4.5
         },
         {
             "key": "dialogue3",
-            "value": "You: What do you mean, buddy? You sound upset.",
-            "duration": 3.5
+            "value": "You: It didn’t go well... they said I wasn’t what they’re looking for. Again.",
+            "duration": 4.0
         },
         {
             "key": "dialogue4",
-            "value": "Mike: You were never really here, Dad... Today was my birthday. You didn’t even remember.",
-            "duration": 5.0
+            "value": "Mom: Oh... I see. Have you been taking your medicine, at least?",
+            "duration": 4.0
         },
         {
             "key": "dialogue4_1",
-            "value": "Mike: Mom would’ve remembered... she always did.",
-            "duration": 3.0
+            "value": "You: Yeah. Every day. Doesn’t really feel like it’s helping anymore though.",
+            "duration": 4.0
         },
         {
             "key": "dialogue5",
-            "value": "You: Oh God... Mike, I—I’m so sorry. I lost track of time. I didn’t mean to forget.",
+            "value": "Mom: Don’t say that. You just need to keep going, okay? Things will get better.",
             "duration": 4.0
         },
         {
             "key": "dialogue5_1",
-            "value": "You: Just hang on, okay? I’m coming home right now. We’ll celebrate, I promise.",
+            "value": "You: ...I’ve been telling myself that for years, Mom.",
+            "duration": 3.5
+        },
+        {
+            "key": "dialogue6",
+            "value": "Mom: Please don’t lose hope. You’re stronger than you think.",
+            "duration": 3.5
+        },
+        {
+            "key": "dialogue7",
+            "value": "You: I’m tired of being strong. I just want to feel normal again.",
+            "duration": 4.0
+        },
+        {
+            "key": "dialogue8",
+            "value": "You: ...",
             "duration": 3.0
         }
     ]
